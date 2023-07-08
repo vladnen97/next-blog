@@ -10,7 +10,7 @@ body {
 main {
     font-size: 19px;
     padding: 120px 20px 0 20px;
-    height: 94.9vh;
+    min-height: 94.9vh;
 }
 
 main h1 {
