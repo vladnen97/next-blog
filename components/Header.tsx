@@ -9,9 +9,9 @@ const Header = () => {
     return (
         <header className={s.header}>
             <nav className={s.nav}>
-                <Link href={'/'} className={router.pathname === '/' && s.active}>Home</Link>
-                <Link href={'/photos'} className={router.pathname === '/photos' && s.active}>Photos</Link>
-                <Link href={'/users'} className={router.pathname === '/users' && s.active}>Users</Link>
+                <Link href={'/'} className={router.pathname === '/' ? s.active : undefined}>Home</Link>
+                <Link href={'/photos'} className={router.pathname === '/photos' ? s.active : undefined}>Photos</Link>
+                <Link href={'/users'} className={router.pathname === '/users' ? s.active : undefined}>Users</Link>
             </nav>
         </header>
     );
